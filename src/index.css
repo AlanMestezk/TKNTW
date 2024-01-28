@@ -1,0 +1,53 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background: url('./assets/dead_king.jpg') no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 998px) {
+     :root {
+        background-repeat: no-repeat;
+        bottom: 0;
+        color: black;
+        left: 0;
+        overflow: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media(min-width: 1200px) {
+     :root {
+        background-repeat: no-repeat;
+        bottom: 0;
+        color: black;
+        left: 0;
+        overflow: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media(max-width: 1203px) {
+     :root {
+        background-repeat: no-repeat;
+        bottom: 0;
+        color: black;
+        left: 0;
+        overflow: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}

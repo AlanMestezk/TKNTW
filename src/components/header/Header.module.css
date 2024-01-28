@@ -1,0 +1,124 @@
+@import url('https://fonts.cdnfonts.com/css/robotech-gp');
+
+/*font-family: 'ROBOTECH GP', sans-serif;*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.705);
+    color: aliceblue;
+    font-family: 'ROBOTECH GP', sans-serif;
+    position: 'absolute';
+    border-bottom: solid 3px rgba(0, 0, 0, 0.705);
+    border-top: solid 3px rgba(0, 0, 0, 0.705);
+    height: 65px;
+}
+
+.container .divTitle .linkHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    text-decoration: none;
+    color: aliceblue
+}
+
+.container .divTitle .logo {
+    width: 40px;
+    margin-right: 5px;
+}
+
+.container .divTitle .link .title {
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.divButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divButtons .buttons {
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: 'ROBOTECH GP', sans-serif;
+    font-size: 20px;
+}
+
+.divButtons .buttons button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: 'ROBOTECH GP', sans-serif;
+    font-size: 20px;
+}
+
+.divButtons .buttons button:hover {
+    font-size: 22px;
+    color: #DAA520;
+}
+
+@media(max-width: 630px) {
+    .divButtons .buttons button {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        color: aliceblue;
+        cursor: pointer;
+        font-family: 'ROBOTECH GP', sans-serif;
+        font-size: 15px;
+    }
+    .divButtons .buttons button:hover {
+        font-size: 15px;
+        color: #DAA520;
+    }
+}
+
+@media(max-width: 500px) {
+    .divButtons .buttons button {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        color: aliceblue;
+        cursor: pointer;
+        font-family: 'ROBOTECH GP', sans-serif;
+        font-size: 13px;
+    }
+    .divButtons .buttons button:hover {
+        font-size: 13px;
+        color: #DAA520;
+    }
+}
+
+@media(max-width: 400px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.705);
+        color: aliceblue;
+        font-family: 'ROBOTECH GP', sans-serif;
+        position: 'absolute';
+        border-bottom: solid 3px rgba(0, 0, 0, 0.705);
+        border-top: solid 3px rgba(0, 0, 0, 0.705);
+        height: 32px;
+    }
+    .container .divTitle .logo {
+        width: 20px;
+        margin-right: 5px;
+    }
+    .divButtons .buttons button {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        color: aliceblue;
+        cursor: pointer;
+        font-family: 'ROBOTECH GP', sans-serif;
+        font-size: 6px;
+    }
+    .divButtons .buttons button:hover {
+        font-size: 6px;
+        color: #DAA520;
+    }
+}
