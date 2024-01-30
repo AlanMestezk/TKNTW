@@ -1,10 +1,9 @@
-import { HomeApp } from "../../components/home"
-
+import { Content } from "./components/content/Content"
 
 export const Home = ()=>{
     return(
         <>
-            <HomeApp/>
+            <Content/>
         </>
     )
 }

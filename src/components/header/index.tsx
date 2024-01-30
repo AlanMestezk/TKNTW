@@ -44,7 +44,7 @@ export const Header = ()=>{
                 </Link>
 
                 <Link className={style.buttons} to=''>
-                    <button>Noticias</button>
+                    <button>Noticías</button>
                 </Link>
 
            </div> 

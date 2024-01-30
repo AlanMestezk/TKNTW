@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/robotech-gp');
+
+/*font-family: 'ROBOTECH GP', sans-serif;*/
+
+.container {
+    width: 100%;
+    min-height: 85vh;
+    position: relative;
+    margin-top: 15px;
+}
+
+.backgroundSection {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+.backgroundSection video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.divTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divTitleLogo {
+    margin-top: 80px;
+}
+
+.titleLogo {
+    width: 900px;
+}
+
+.divSubtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.subtitle {
+    width: 400px;
+    height: 20px;
+}
+
+.divTitle .subtitle {
+    font-family: 'ROBOTECH GP', sans-serif;
+    margin-top: 2px;
+    font-size: 50px;
+    color: aliceblue;
+    -webkit-text-stroke: 2px #000;
+}
+
+.divButton {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divButton .button {
+    width: 300px;
+    height: 60px;
+    background-image: linear-gradient( 110.2deg, rgba(99, 192, 227, 1) 5.3%, rgba(98, 72, 194, 1) 100.2%);
+    border: 3px solid #DAA520;
+    border-radius: 40px;
+    font-family: 'ROBOTECH GP', sans-serif;
+    font-size: 30PX;
+    color: #DAA520;
+    -webkit-text-stroke: 1px #000;
+    cursor: pointer;
+}
+
+.divButton .button:hover {
+    transition: 0.6s;
+    background-image: linear-gradient( 109.6deg, rgba(225, 103, 211, 1) 11.2%, rgba(207, 91, 91, 1) 91.1%);
+}
+
+@media(max-width: 900px) {
+    .titleLogo {
+        width: 450px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .subtitle {
+        width: 300px;
+        height: 15px;
+    }
+}
+
+@media(max-width: 600px) {
+    .titleLogo {
+        width: 450px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .subtitle {
+        width: 300px;
+        height: 15px;
+    }
+}
+
+@media(max-width: 400px) {
+    .titleLogo {
+        width: 350px;
+    }
+    .logo {
+        width: 100px;
+    }
+    .subtitle {
+        width: 200px;
+        height: 10px;
+    }
+}
