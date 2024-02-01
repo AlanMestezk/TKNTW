@@ -102,11 +102,9 @@ export const HistoryContent = () => {
       <section className={style.contentHistory}>
 
         <pre className={style.history}>{history}</pre>
-
         <button onClick={handleScrollToTop} className={style.button}>
-          <GiSpiralArrow className={style.arrow1}/> Voltar ao inicio <GiSpiralArrow className={style.arrow1}/>
+        <GiSpiralArrow className={style.arrow1}/> Voltar ao inicio <GiSpiralArrow className={style.arrow1}/>
         </button>
-        
       </section>
     </main>
 
