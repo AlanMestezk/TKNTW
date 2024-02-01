@@ -27,24 +27,20 @@ export const Header = ()=>{
 
            <div className={style.divButtons}> 
 
-                <Link className={style.buttons} to=''>
-                    <button>O jogo</button>
+                <Link className={style.buttons} to='/history'>
+                    <button>history</button>
                 </Link>
 
                 <Link className={style.buttons} to=''>
-                    <button>História</button>
+                    <button>characters</button>
                 </Link>
 
                 <Link className={style.buttons} to=''>
-                    <button>Personagens</button>
+                    <button>inspiration</button>
                 </Link>
 
                 <Link className={style.buttons} to=''>
-                    <button>Inspiração</button>
-                </Link>
-
-                <Link className={style.buttons} to=''>
-                    <button>Noticías</button>
+                    <button>news</button>
                 </Link>
 
            </div> 

@@ -1,65 +1,68 @@
-import videoBackGround   from '../../../../assets/rise「gmv」-yt5s.ink.mp4'
-import style             from './Content.module.css'
-import { Link }          from 'react-router-dom';
-import { GiSpiralArrow } from "react-icons/gi";
-import logo              from '../../../../assets/logo.png'
-import textLogo          from '../../../../assets/logoIconText.png'
-import textSubtitle      from '../../../../assets/SUBTITLE.png'
+import style                   from './Content.module.css';
+import logo                    from '../../../../assets/logo.png';
+import textLogo                from '../../../../assets/logoIconText.png';
+import { Link }                from 'react-router-dom';
+import textSubtitle            from '../../../../assets/SUBTITLE.png';
+import videoBackGround         from '../../../../assets/rise「gmv」-yt5s.ink.mp4';
+import { GiSpiralArrow }       from 'react-icons/gi';
 
-export const Content = ()=>{
 
-    return(
-      
-        <main className={style.container}>
-            
-            <section className={style.backgroundSection}>
-                <video src={videoBackGround} autoPlay loop muted></video>
-            </section>
+export const Content = () => {
+  
 
-            <section className={style.box}>
+  return (
 
-                <div className={style.divTitle}>
+    <main className={style.container}>
 
-                    <div className={style.divTitleLogo}>
 
-                        <img 
-                            src={textLogo}
-                            className={style.titleLogo}
-                            alt="titulo the king that never was" 
-                        />
+                    <section className={style.backgroundSection}>
+                        <video src={videoBackGround} autoPlay loop muted/>
+                    </section>
 
-                    </div>
+                    <section className={style.box}>
 
-                    <div className={style.divSubtitle}>
+                        <div className={style.divTitle}>
 
-                        <img 
-                            src={logo} 
-                            alt="subtitle the legacy" 
-                            className={style.logo}
-                        />
+                            <div className={style.divTitleLogo}>
 
-                        <img 
-                            src={textSubtitle} 
-                            alt="sutitle"
-                            className={style.subtitle} 
-                        />
+                                <img 
+                                    src={textLogo}
+                                    className={style.titleLogo}
+                                    alt="titulo the king that never was" 
+                                />
 
-                    </div>
-                    
-                </div>
+                            </div>
 
-                <div className={style.divButton}>
+                            <div className={style.divSubtitle}>
 
-                    <Link to=''>
-                        
-                        <button className={style.button}><GiSpiralArrow className={style.arrow1}/> JOGAR AGORA <GiSpiralArrow className={style.arrow1}/></button>
+                                <img 
+                                    src={logo} 
+                                    alt="subtitle the legacy" 
+                                    className={style.logo}
+                                />
 
-                    </Link>
+                                <img 
+                                    src={textSubtitle} 
+                                    alt="sutitle"
+                                    className={style.subtitle} 
+                                />
 
-                </div>
+                            </div>
+                                        
+                            </div>
 
-            </section>
+                                <div className={style.divButton}>
 
-        </main>
-    )
-}
+                                    <Link to=''>
+                                            
+                                        <button className={style.button}><GiSpiralArrow className={style.arrow1}/> JOGAR AGORA <GiSpiralArrow className={style.arrow1}/></button>
+
+                                    </Link>
+
+                                </div>
+
+                    </section>
+
+    </main>
+  );
+};
