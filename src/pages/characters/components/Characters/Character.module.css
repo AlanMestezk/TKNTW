@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+/* Adicionado o reset de margin e padding para melhor consistência */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Restante do seu CSS */
+
+.container {
+    width: 100%;
+    min-height: 85vh;
+    position: relative;
+    margin-top: 15px;
+}
+
+.SectionBackground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+.SectionBackground .wallpaper {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sectionContent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.432), transparent);
+    overflow-y: auto;
+    /* Adicionado para barra de rolagem vertical */
+}
+
+.divSectionTitle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+}
+
+.sectionComponents {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.components {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.components .icon {
+    width: 150px;
+}
+
+.components .logoText {
+    width: 450px;
+}
+
+.iconsLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    margin-top: 60px;
+    /* Adicionado para barra de rolagem horizontal */
+}
+
+.divIcons {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: url('../../../../assets/img/borderForIcons.gif');
+    background-size: 200%;
+    /* Ajuste o valor conforme necessário para aumentar o tamanho */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: solid 2.5px yellow;
+}
+
+.iconImg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 4px;
+    border: solid 1px yellow;
+    /* Adicione esta linha para manter a proporção da imagem */
+}

@@ -1,9 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout }              from "./components/layout";
-
-//pages
-import { Home }  from "./pages/home";
-import {History} from './pages/history'
+import { Home }                from "./pages/home";
+import {History}               from './pages/history'
+import { Characters }          from "./pages/characters";
 
 
 export const router = createBrowserRouter(
@@ -20,6 +19,10 @@ export const router = createBrowserRouter(
                 {
                     path:'/history',
                     element:<History/>
+                },
+                {
+                    path:'/characters',
+                    element: <Characters/>
                 }
             ]
         }

@@ -5,8 +5,9 @@ import textHistory             from '../../../../assets/The King That Never Was.
 import { GiSpiralArrow }       from 'react-icons/gi';
 
 export const HistoryContent = () => {
-  const [history, setHistory] = useState<string>('');
-  const [scrollingDown, setScrollingDown] = useState<boolean>(false);
+  
+  const [history,                 setHistory] = useState<string>('');
+  const [scrollingDown,     setScrollingDown] = useState<boolean>(false);
   const [__sectionVisible, setSectionVisible] = useState<boolean>(true);
 
   useEffect(() => {
