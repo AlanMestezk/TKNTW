@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Meedori Sans";
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot");
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot?#iefix")format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff2")format("woff2"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff")format("woff"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.svg#Meedori Sans")format("svg");
+}
+
+
+/*
+    font-family: "Meedori Sans";
+*/
+
+.container {
+    width: 100%;
+    min-height: 85vh;
+    position: relative;
+    margin-top: 10px;
+}
+
+.backgroundSection {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+    background-color: black;
+}
+
+.mainContent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.inpiration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTitle {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-family: "Meedori Sans";
+    color: yellow;
+    font-size: 70px;
+}
+
+.subtitle {
+    font-family: 'ROBOTECH GP', sans-serif;
+    margin-top: 2px;
+    font-size: 50px;
+    color: aliceblue;
+    -webkit-text-stroke: 2px #000;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    /* Remove os marcadores padrão de lista */
+    background-size: cover;
+    /* Para cobrir todo o espaço do item */
+    background-position: right;
+    /* Centraliza a imagem de fundo */
+    /* Define a opacidade para 80% */
+    background-position: center;
+}
+
+.itens {
+    position: relative;
+    /* Adiciona posição relativa */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: solid yellow;
+}
+
+.itens::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    /* Cor preta com 50% de opacidade */
+    z-index: -1;
+}
+
+.itens:nth-child(1) {
+    background-image: url('../../../../assets/img/icons/apexWallpaper.jpg');
+}
+
+.itens:nth-child(2) {
+    background-image: url('../../../../assets/img/icons/LolWallpaper.jpeg');
+}
+
+.itens:nth-child(3) {
+    background-image: url('../../../../assets/img/icons/diabloWallpaper.jpg');
+}
+
+.itens:nth-child(4) {
+    background-image: url('../../../../assets/img/icons/AdenWallpaper.jpg');
+}
+
+.itens:nth-child(5) {
+    background-image: url('../../../../assets/img/icons/linearWallpaper.jpg');
+}
+
+.divImg {
+    margin-right: 30px;
+}
+
+.imgInspiration {
+    width: 200px;
+    margin-left: 10px;
+}
+
+.divDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleName {
+    font-family: "Meedori Sans";
+    color: yellow;
+}
+
+.button {
+    width: 220px;
+    height: 40px;
+    background-image: linear-gradient( 110.2deg, rgb(16, 19, 185) 5.3%, rgb(122, 21, 21) 100.2%);
+    border: 3px solid #DAA520;
+    border-radius: 40px;
+    font-family: 'ROBOTECH GP', sans-serif;
+    font-size: 20PX;
+    color: #DAA520;
+    font-family: "Meedori Sans";
+    margin-top: 10px;
+    cursor: url('../../../src/assets/CursorPointer.png'), pointer;
+}
+
+.button:hover {
+    background-image: linear-gradient( 110.2deg, rgb(12, 13, 51) 5.3%, rgb(14, 114, 23) 100.2%);
+}
+
+@media only screen and (max-width: 800px) {
+    .title {
+        font-size: 40px;
+    }
+    .subtitle {
+        font-size: 20px;
+        font-size: 18px;
+        color: aliceblue;
+        -webkit-text-stroke: 0px #000;
+    }
+    .imgInspiration {
+        width: 120px;
+        margin-left: 10px;
+    }
+    .button {
+        width: 120px;
+        height: 40px;
+        font-size: 10px;
+    }
+}

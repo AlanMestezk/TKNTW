@@ -35,7 +35,7 @@ export const Header = ()=>{
                     <button>characters</button>
                 </Link>
 
-                <Link className={style.buttons} to=''>
+                <Link className={style.buttons} to='/inspirations'>
                     <button>inspiration</button>
                 </Link>
 
