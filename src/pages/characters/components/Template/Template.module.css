@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@font-face {
+    font-family: "Meedori Sans";
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot");
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff") format("woff"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.svg#Meedori Sans") format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.divInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.021));
+}
+
+.nameCharacter {
+    font-size: 43px;
+    font-family: 'Lora', serif;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.623);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.726);
+}
+
+.titleCharacter {
+    font-size: 33px;
+    font-family: "Meedori Sans";
+    color: rgb(219, 200, 24);
+    background-color: rgba(0, 0, 0, 0.623);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.726);
+}
+
+.historyCharacter {
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    font-weight: lighter;
+    color: aliceblue;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 10px 10px 12px rgba(0, 0, 0, 0.726);
+    padding: 20px;
+}
+
+.sectionCharacter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.sectionImgCharater {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.imgCharater {
+    width: 100%;
+    max-width: 700px;
+    object-fit: cover;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.041), rgba(0, 0, 0, 0.021));
+}
+
+.imgSize800 {
+    max-width: 800px;
+}
+
+.sectionWallpaper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+.sectionCharacter .wallpaper {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right top !important;
+}
+
+@media only screen and (max-width: 1366px) {
+    .nameCharacter {
+        font-size: 25px;
+    }
+    .titleCharacter {
+        font-size: 20px;
+    }
+    .historyCharacter {
+        font-size: 10px;
+    }
+    .imgCharater {
+        max-width: 400px;
+    }
+    .sectionCharacter .wallpaper {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right top !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nameCharacter {
+        font-size: 15px;
+    }
+    .titleCharacter {
+        font-size: 10px;
+    }
+    .historyCharacter {
+        font-size: 8px;
+    }
+    .imgCharater {
+        max-width: 0px;
+    }
+    .sectionCharacter .wallpaper {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right top !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+}

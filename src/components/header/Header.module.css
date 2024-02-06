@@ -80,7 +80,7 @@
         color: aliceblue;
         cursor: pointer;
         font-family: 'Gotham Knights Expand Italic', sans-serif;
-        font-size: 15px;
+        font-size: 20px;
     }
     .divButtons .buttons button:hover {
         font-size: 15px;
@@ -95,10 +95,10 @@
         color: aliceblue;
         cursor: pointer;
         font-family: 'Gotham Knights Expand Italic', sans-serif;
-        font-size: 13px;
+        font-size: 18px;
     }
     .divButtons .buttons button:hover {
-        font-size: 13px;
+        font-size: 21px;
         color: #DAA520;
     }
 }

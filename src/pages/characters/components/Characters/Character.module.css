@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
-/* Adicionado o reset de margin e padding para melhor consistência */
+/*font-family: 'Lora', serif;*/
+
+@font-face {
+    font-family: "Meedori Sans";
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot");
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot?#iefix")format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff2")format("woff2"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff")format("woff"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.svg#Meedori Sans")format("svg");
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/* Restante do seu CSS */
 
 .container {
     width: 100%;
@@ -40,7 +44,6 @@
     z-index: 1;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.432), transparent);
     overflow-y: auto;
-    /* Adicionado para barra de rolagem vertical */
 }
 
 .divSectionTitle {
@@ -48,9 +51,32 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    color: aliceblue;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divSectionTitle .title {
+    color: rgb(241, 241, 51);
+    font-family: "Meedori Sans";
+    font-weight: bolder;
+    font-size: 60px;
+    padding: 10px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
+}
+
+.divSectionTitle .subtitle,
+.divSectionTitle .paragrafo {
     font-family: 'Lora', serif;
-    font-size: 30px;
+    font-weight: lighter;
+    font-size: 20px;
+    color: aliceblue;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .sectionComponents {
@@ -58,17 +84,38 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* Adicionado para permitir que os componentes se ajustem em dispositivos menores */
 }
 
 .components {
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 5vh;
+    margin-right: -200px;
+}
+
+.divText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
-.components .icon {
-    width: 150px;
+.titleDescription {
+    font-family: 'Lora', serif;
+    font-weight: bolder;
+    font-size: 26px;
+    color: aliceblue;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.726);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .components .logoText {
@@ -80,36 +127,109 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 30%;
     height: 100%;
     overflow-x: auto;
-    margin-top: 60px;
-    /* Adicionado para barra de rolagem horizontal */
+    margin-top: 40px;
 }
 
 .divIcons {
-    width: 130px;
-    height: 130px;
+    width: 118px;
+    height: 118px;
     border-radius: 50%;
     background: url('../../../../assets/img/borderForIcons.gif');
     background-size: 200%;
-    /* Ajuste o valor conforme necessário para aumentar o tamanho */
     background-repeat: no-repeat;
     background-position: center;
-    margin-left: 80vh;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    border: solid 2.5px yellow;
+    border: solid 3px rgba(211, 211, 46, 0.815);
+    cursor: url('../../../src/assets/CursorPointer.png'), pointer;
+    box-sizing: border-box;
 }
 
 .iconImg {
-    width: 120px;
-    height: 120px;
+    width: 105px;
+    height: 105px;
     border-radius: 50%;
     object-fit: cover;
     padding: 4px;
     border: solid 1px yellow;
-    /* Adicione esta linha para manter a proporção da imagem */
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease, background-size 0.3s ease;
+}
+
+.iconImg:hover {
+    width: 125px;
+    height: 125px;
+    border: none;
+}
+
+@media only screen and (max-width: 1366px) {
+    .divSectionTitle .title {
+        font-size: 25px;
+    }
+    .divSectionTitle .subtitle,
+    .divSectionTitle .paragrafo {
+        font-size: 15px;
+    }
+    .sectionComponents {
+        margin-top: -30px;
+    }
+    .divIcons {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+    .iconImg {
+        width: 70px;
+        height: 70px;
+    }
+    .iconImg:hover {
+        width: 83px;
+        height: 83px;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin-top: 15px;
+    }
+    .divSectionTitle .title {
+        font-size: 18px;
+        margin-top: 10vh !important;
+    }
+    .divSectionTitle .subtitle,
+    .divSectionTitle .paragrafo {
+        font-size: 7px;
+    }
+    .sectionComponents {
+        margin-top: -30px;
+    }
+    .components {
+        margin-left: -50px;
+    }
+    .divIcons {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+    .iconImg {
+        width: 60px;
+        height: 60px;
+    }
+    .iconImg:hover {
+        width: 75px;
+        height: 75px;
+        border: none;
+    }
 }
