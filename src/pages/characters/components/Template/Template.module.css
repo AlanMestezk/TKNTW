@@ -64,6 +64,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    animation: fadeInOut 0.8s ease forwards;
 }
 
 .sectionImgCharater {
@@ -96,6 +97,21 @@
     height: 100%;
     object-fit: cover;
     object-position: right top !important;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        /* Começa completamente invisível */
+    }
+    50% {
+        opacity: 0;
+        /* Mantém invisível até a metade da animação */
+    }
+    100% {
+        opacity: 1;
+        /* Torna-se completamente visível no final */
+    }
 }
 
 @media only screen and (max-width: 1366px) {

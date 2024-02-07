@@ -19,7 +19,7 @@
     width: 100%;
     min-height: 85vh;
     position: relative;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 .SectionBackground {
@@ -53,6 +53,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    /* duração da animação */
+    animation-timing-function: ease;
+    /* função de temporização (opcional) */
+    animation-delay: 0s;
+    /* atraso antes da animação começar (opcional) */
+    animation-iteration-count: 1;
+    /* número de vezes que a animação deve ser repetida (opcional) */
+    animation-direction: initial;
+    /* direção da animação (opcional) */
+    animation-fill-mode: forwards;
+    /* comportamento do elemento após a animação (opcional) */
+    animation-play-state: running;
 }
 
 .divSectionTitle .title {
@@ -85,7 +99,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Adicionado para permitir que os componentes se ajustem em dispositivos menores */
 }
 
 .components {
@@ -150,6 +163,7 @@
     border: solid 3px rgba(211, 211, 46, 0.815);
     cursor: url('../../../src/assets/CursorPointer.png'), pointer;
     box-sizing: border-box;
+    animation: slideIn 2s ease forwards;
 }
 
 .iconImg {
@@ -166,6 +180,26 @@
     width: 125px;
     height: 125px;
     border: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -209,7 +243,7 @@
     }
     .divSectionTitle .subtitle,
     .divSectionTitle .paragrafo {
-        font-size: 10px;
+        font-size: 8px;
     }
     .sectionComponents {
         margin-top: -30px;

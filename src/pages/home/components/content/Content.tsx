@@ -1,5 +1,5 @@
 import style                   from './Content.module.css';
-import logo                    from '../../../../assets/logo.png';
+import logo                    from '../../../../assets/img/TKNTW!.png';
 import textLogo                from '../../../../assets/logoIconText.png';
 import { Link }                from 'react-router-dom';
 import textSubtitle            from '../../../../assets/SUBTITLE.png';

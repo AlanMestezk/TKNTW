@@ -1,0 +1,281 @@
+@font-face {
+    font-family: "Meedori Sans";
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot");
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot?#iefix")format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff2")format("woff2"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff")format("woff"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.svg#Meedori Sans")format("svg");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+/*font-family: 'Lora', serif;*/
+
+
+/*
+    font-family: "Meedori Sans";
+*/
+
+.container {
+    width: 100%;
+    min-height: 85vh;
+    position: relative;
+    margin-top: 10px;
+}
+
+.divBackground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+    overflow: auto;
+    /* Adiciona uma barra de rolagem quando o conteúdo excede as dimensões da div */
+    max-height: 100%;
+    /* Definindo uma altura máxima */
+    box-sizing: border-box;
+    /* Inclua a largura da borda e do preenchimento no cálculo da altura */
+}
+
+.divBackground video {
+    width: 100%;
+    max-height: 100%;
+    /* O vídeo não ultrapassará a altura máxima da div */
+    object-fit: cover;
+}
+
+.sectionWallpaper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.divIconTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    /* duração da animação */
+    animation-timing-function: ease;
+    /* função de temporização (opcional) */
+    animation-delay: 0s;
+    /* atraso antes da animação começar (opcional) */
+    animation-iteration-count: 1;
+    /* número de vezes que a animação deve ser repetida (opcional) */
+    animation-direction: initial;
+    /* direção da animação (opcional) */
+    animation-fill-mode: forwards;
+    /* comportamento do elemento após a animação (opcional) */
+    animation-play-state: running;
+    /* estado de reprodução da animação (opcional) */
+}
+
+.logoIcon {
+    width: 250px;
+}
+
+.title {
+    font-family: 'ROBOTECH GP', sans-serif;
+    font-size: 80px;
+    color: rgb(236, 236, 33);
+    font-weight: lighter;
+    -webkit-text-stroke: 2px #8d7905;
+}
+
+strong {
+    color: aliceblue;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+}
+
+.containersNews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    /* duração da animação */
+    animation-timing-function: ease;
+    /* função de temporização (opcional) */
+    animation-delay: 0s;
+    /* atraso antes da animação começar (opcional) */
+    animation-iteration-count: 1;
+    /* número de vezes que a animação deve ser repetida (opcional) */
+    animation-direction: initial;
+    /* direção da animação (opcional) */
+    animation-fill-mode: forwards;
+    /* comportamento do elemento após a animação (opcional) */
+    animation-play-state: running;
+    /* estado de reprodução da animação (opcional) */
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 10px 10px;
+    padding: 12px;
+    height: 150px;
+    width: 300px;
+    border-radius: 50px;
+    background-image: url('../../../../assets/img/iconWallpaperGif.gif');
+    position: relative;
+    cursor: pointer url('../../../../assets/CursorPointer.png');
+    transition: width 0.5s ease, height 0.5s ease, border-radius 0.5s ease, background-size 0.5s ease;
+    border: solid 3px #ebd514;
+    /* Adicionando position relative */
+}
+
+.news:hover {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imgNews {
+    width: 200px;
+    margin-top: -100px;
+    /* Adicionando borda superior */
+    border-radius: 50%;
+    transition: width 0.5s ease, height 0.3s ease, border-radius 0.5s ease, background-size 0.5s ease;
+}
+
+h1 {
+    color: #ebd514;
+    font-family: "Meedori Sans";
+}
+
+.news:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+p {
+    color: aliceblue;
+    font-family: 'Lora', serif;
+    padding: 10px;
+    transition: width 0.5s ease, height 0.3s ease, border-radius 0.5s ease, background-size 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.paragraphAnimation {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .logoIcon {
+        margin-top: 10px;
+        width: 190px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    strong {
+        font-size: 20px;
+    }
+    .news {
+        height: 90px;
+        width: 300px;
+        border-radius: 50px;
+        margin: 10px 10px 10px;
+    }
+    .news:hover {
+        height: 100px;
+        width: 300px;
+    }
+    .imgNews {
+        width: 100px;
+        margin-top: -50px;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    p {
+        margin-top: -10px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sectionWallpaper {
+        background: none;
+    }
+    .divBackground {
+        height: auto;
+        /* Altura automática para caber o conteúdo verticalmente */
+        max-height: 100vh;
+        /* Limita a altura máxima para 100% da altura da tela */
+    }
+    .logoIcon {
+        margin-top: 10px;
+        width: 100px;
+    }
+    .title {
+        font-size: 40px;
+    }
+    strong {
+        font-size: 0px;
+    }
+    .containersNews {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .news {
+        height: 100px;
+        width: 50%;
+        border-radius: 50px;
+        border-radius: 0px;
+        margin-bottom: 60px;
+    }
+    .news:hover {
+        height: 100px;
+        width: 50px;
+    }
+    .imgNews {
+        width: 80px;
+    }
+    h1 {
+        font-size: 10px;
+        font-family: 'Lora', serif;
+    }
+    .news:hover p {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .paragraphAnimation {
+        animation: none;
+    }
+    p {
+        margin-top: 5px;
+        color: aliceblue;
+        font-family: 'Lora', serif;
+        font-size: 9px;
+        padding: 3px;
+        transition: width 0.5s ease, height 0.3s ease, border-radius 0.5s ease, background-size 0.5s ease;
+    }
+    .hidden {
+        display: flex;
+    }
+    .paragraphAnimation {
+        animation: fadeIn 0.5s ease forwards;
+    }
+}

@@ -3,6 +3,12 @@
 @import url('https://fonts.cdnfonts.com/css/robotech-complete');
 @import url('https://fonts.cdnfonts.com/css/gotham-knights');
 @import url('https://fonts.cdnfonts.com/css/wow-plexus');
+@font-face {
+    font-family: "Meedori Sans";
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot");
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot?#iefix")format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff2")format("woff2"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff")format("woff"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.svg#Meedori Sans")format("svg");
+}
+
 
 /*
     font-family: 'ROBOTECH GP', sans-serif;
@@ -20,9 +26,9 @@
     color: aliceblue;
     font-family: 'ROBOTECH GP', sans-serif;
     position: 'absolute';
-    border-bottom: solid 3px rgba(0, 0, 0, 0.705);
-    border-top: solid 3px rgba(0, 0, 0, 0.705);
-    height: 65px;
+    border-bottom: solid 3px rgba(197, 168, 3, 0.705);
+    border-top: solid 3px rgba(197, 168, 3, 0.705);
+    height: 55px;
 }
 
 .container .divTitle .linkHome {
@@ -37,13 +43,16 @@
 }
 
 .container .divTitle .logo {
-    width: 40px;
+    width: 80px;
     margin-right: 5px;
+    padding: 20px;
 }
 
-.container .divTitle .link .title {
-    font-size: 40px;
-    color: aliceblue;
+.logoTextIconTKNTW {
+    width: 200px;
+    height: 50px;
+    padding: 12px;
+    margin-left: -30px;
 }
 
 .divButtons {
@@ -52,25 +61,33 @@
     align-items: center;
 }
 
-.divButtons .buttons {
+.divButtons .buttonsLink {
     border: none;
     color: aliceblue;
     font-size: 20px;
     margin-right: 20px;
+    text-decoration: none;
+    transition: width 0.5s ease, height 0.5s ease, border-radius 0.5s ease, background-size 0.5s ease;
 }
 
-.divButtons .buttons button {
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    color: aliceblue;
-    font-family: 'Robotech Complete', sans-serif;
-    font-size: 16px;
-    cursor: url('../../../src/assets/CursorPointer.png'), pointer;
+.strongButtons {
+    background-image: linear-gradient(to right, #ffd700, #e5bc00);
+    /* Aplica o efeito de clip no texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Define a cor de fundo */
+    color: transparent;
+    font-family: 'ROBOTECH GP', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
 }
 
-.divButtons .buttons button:hover {
-    font-size: 18px;
-    color: #DAA520;
+.divButtons .buttonsLink:hover {
+    background: linear-gradient(to right, #c5a2062f, #dbd0372d, #00000042);
+    border-radius: 50px;
 }
 
 @media(max-width: 630px) {
@@ -103,40 +120,43 @@
     }
 }
 
-@media(max-width: 400px) {
+@media only screen and (max-width: 800px) {
     .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.705);
-        color: aliceblue;
-        font-family: 'ROBOTECH GP', sans-serif;
-        position: 'absolute';
-        border-bottom: solid 3px rgba(0, 0, 0, 0.705);
-        border-top: solid 3px rgba(0, 0, 0, 0.705);
-        height: 32px;
+        height: 80px;
     }
     .container .divTitle .logo {
-        width: 15px;
+        width: 92px;
         margin-right: 5px;
+        padding: 20px;
     }
-    .divButtons .buttons {
+    .logoTextIconTKNTW {
+        width: 0px;
+        margin-left: -30px;
+    }
+    .divButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .divButtons .buttonsLink {
         border: none;
         color: aliceblue;
-        cursor: pointer;
-        font-size: 20px;
-        padding: 3px;
+        margin-right: 20px;
+        text-decoration: none;
+        transition: width 0.5s ease, height 0.5s ease, border-radius 0.5s ease, background-size 0.5s ease;
     }
-    .divButtons .buttons button {
-        background-color: rgba(0, 0, 0, 0);
-        border: none;
-        color: aliceblue;
-        cursor: pointer;
-        font-family: 'Gotham Knights Expand Italic', sans-serif;
-        font-size: 13px;
-    }
-    .divButtons .buttons button:hover {
-        font-size: 14px;
-        color: #DAA520;
+    .strongButtons {
+        background-image: linear-gradient(to right, #ffd700, #e5bc00);
+        /* Aplica o efeito de clip no texto */
+        -webkit-background-clip: text;
+        background-clip: text;
+        /* Define a cor de fundo */
+        color: transparent;
+        font-family: 'ROBOTECH GP', sans-serif;
+        font-size: 15px;
+        padding: 0px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
     }
 }

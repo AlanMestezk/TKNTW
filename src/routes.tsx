@@ -6,6 +6,7 @@ import { Home }                from "./pages/home";
 import {History}               from './pages/history'
 import { Characters }          from "./pages/characters";
 import { Inspiration }         from "./pages/inspiration";
+import { News }                from "./pages/news";
 
 
 export const router = createBrowserRouter(
@@ -30,6 +31,10 @@ export const router = createBrowserRouter(
                 {
                     path   :'/inspirations',
                     element: <Inspiration/>
+                },
+                {
+                    path   :'/news',
+                    element: <News/>
                 }
             ]
         }

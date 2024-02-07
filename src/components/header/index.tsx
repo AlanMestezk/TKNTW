@@ -1,6 +1,7 @@
 import { Link }     from 'react-router-dom'
 import style        from './Header.module.css'
-import logo         from '../../assets/logo.png'
+import logo         from '../../assets/../assets/img/TKNTW!.png'
+import logoText     from '../../assets/logoIconText.png'
 
 
 export const Header = ()=>{
@@ -19,7 +20,13 @@ export const Header = ()=>{
                         className={style.logo} 
                     />
 
-                     <h1 className={style.title}>TKNTW</h1>
+                    <img 
+                        src={logoText} 
+                        alt="text TKNTW" 
+                        className={style.logoTextIconTKNTW}
+                    />
+                    
+
                 </Link>
 
 
@@ -27,20 +34,24 @@ export const Header = ()=>{
 
            <div className={style.divButtons}> 
 
-                <Link className={style.buttons} to='/history'>
-                    <button>history</button>
+                <Link className={style.buttonsLink} to='/history'>
+
+                    <strong className={style.strongButtons}>HISTORY</strong>
                 </Link>
 
-                <Link className={style.buttons} to='/characters'>
-                    <button>characters</button>
+                <Link className={style.buttonsLink} to='/characters'>
+
+                    <strong className={style.strongButtons}>CHARACTERS</strong>
                 </Link>
 
-                <Link className={style.buttons} to='/inspirations'>
-                    <button>inspiration</button>
+                <Link className={style.buttonsLink} to='/inspirations'>
+
+                    <strong className={style.strongButtons}>INPIRATION</strong>
                 </Link>
 
-                <Link className={style.buttons} to=''>
-                    <button>news</button>
+                <Link className={style.buttonsLink} to='/news'>
+
+                    <strong className={style.strongButtons}>NEWS</strong>
                 </Link>
 
            </div> 

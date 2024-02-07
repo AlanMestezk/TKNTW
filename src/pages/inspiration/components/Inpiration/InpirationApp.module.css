@@ -42,6 +42,21 @@
 .divTitle {
     text-align: center;
     padding: 20px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    /* duração da animação */
+    animation-timing-function: ease;
+    /* função de temporização (opcional) */
+    animation-delay: 0s;
+    /* atraso antes da animação começar (opcional) */
+    animation-iteration-count: 1;
+    /* número de vezes que a animação deve ser repetida (opcional) */
+    animation-direction: initial;
+    /* direção da animação (opcional) */
+    animation-fill-mode: forwards;
+    /* comportamento do elemento após a animação (opcional) */
+    animation-play-state: running;
+    /* estado de reprodução da animação (opcional) */
 }
 
 .title {
@@ -88,6 +103,21 @@
     background-repeat: no-repeat;
     border-radius: 50px;
     border: solid yellow;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    /* duração da animação */
+    animation-timing-function: ease;
+    /* função de temporização (opcional) */
+    animation-delay: 0s;
+    /* atraso antes da animação começar (opcional) */
+    animation-iteration-count: 1;
+    /* número de vezes que a animação deve ser repetida (opcional) */
+    animation-direction: initial;
+    /* direção da animação (opcional) */
+    animation-fill-mode: forwards;
+    /* comportamento do elemento após a animação (opcional) */
+    animation-play-state: running;
+    /* estado de reprodução da animação (opcional) */
 }
 
 .itens::before {
@@ -130,6 +160,11 @@
 .imgInspiration {
     width: 200px;
     margin-left: 10px;
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease, background-size 0.3s ease;
+}
+
+.imgInspiration:hover {
+    width: 300px;
 }
 
 .divDescription {
@@ -162,13 +197,23 @@
     background-image: linear-gradient( 110.2deg, rgb(12, 13, 51) 5.3%, rgb(14, 114, 23) 100.2%);
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .title {
         font-size: 40px;
     }
     .subtitle {
-        font-size: 20px;
-        font-size: 18px;
+        font-size: 15px;
         color: aliceblue;
         -webkit-text-stroke: 0px #000;
     }
@@ -180,5 +225,8 @@
         width: 120px;
         height: 40px;
         font-size: 10px;
+    }
+    .imgInspiration:hover {
+        width: 140px;
     }
 }

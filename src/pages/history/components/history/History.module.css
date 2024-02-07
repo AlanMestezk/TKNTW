@@ -19,6 +19,20 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    /* duração da animação */
+    animation-timing-function: ease;
+    /* função de temporização (opcional) */
+    animation-delay: 0s;
+    /* atraso antes da animação começar (opcional) */
+    animation-iteration-count: 1;
+    /* número de vezes que a animação deve ser repetida (opcional) */
+    animation-direction: initial;
+    /* direção da animação (opcional) */
+    animation-fill-mode: forwards;
+    /* comportamento do elemento após a animação (opcional) */
+    animation-play-state: running;
 }
 
 .sectionHistory .title {
@@ -104,6 +118,17 @@
 .button:hover {
     transition: 0.6s;
     background-image: linear-gradient( 109.6deg, rgb(202, 44, 184) 11.2%, rgb(219, 57, 57) 91.1%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media only screen and (max-width: 800px) {
