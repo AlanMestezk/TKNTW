@@ -27,8 +27,8 @@
 /* Handle - parte móvel da scrollbar */
 
  ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient( 109.6deg, rgb(202, 44, 184) 11.2%, rgb(219, 57, 57) 91.1%);
-    /* Cor da handle da scrollbar */
+    background-color: #998f54;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
 }
 
 
@@ -45,7 +45,7 @@ html {
 html.click,
 html.click a,
 html.click a:hover,
-a:hover {
+button a:hover {
     cursor: url('../src/assets/CursorPointer.png'), auto;
 }
 

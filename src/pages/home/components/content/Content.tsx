@@ -5,6 +5,7 @@ import { Link }                from 'react-router-dom';
 import textSubtitle            from '../../../../assets/SUBTITLE.png';
 import videoBackGround         from '../../../../assets/rise「gmv」-yt5s.ink.mp4';
 import { GiSpiralArrow }       from 'react-icons/gi';
+import posterImage             from '../../../../assets/img/pico-de-montanha-majestoso-em-paisagem-tranquila-de-inverno-gerada-por-ia.jpg'
 
 
 export const Content = () => {
@@ -16,7 +17,7 @@ export const Content = () => {
 
 
                     <section className={style.backgroundSection}>
-                        <video src={videoBackGround} autoPlay loop muted/>
+                        <video src={videoBackGround} autoPlay loop muted  poster={posterImage}/>
                     </section>
 
                     <section className={style.box}>
@@ -53,7 +54,7 @@ export const Content = () => {
 
                                 <div className={style.divButton}>
 
-                                    <Link to=''>
+                                    <Link to='/login'>
                                             
                                         <button className={style.button}><GiSpiralArrow className={style.arrow1}/> JOGAR AGORA <GiSpiralArrow className={style.arrow1}/></button>
 

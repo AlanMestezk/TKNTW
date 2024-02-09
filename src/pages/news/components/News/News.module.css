@@ -95,7 +95,7 @@ strong {
     align-items: center;
     margin-top: 70px;
     animation-name: fadeIn;
-    animation-duration: 3s;
+    animation-duration: 5s;
     /* duração da animação */
     animation-timing-function: ease;
     /* função de temporização (opcional) */
@@ -216,14 +216,22 @@ p {
 }
 
 @media only screen and (max-width: 800px) {
+    .divBackground {
+        width: 105%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.7;
+        overflow: auto;
+        /* Adiciona uma barra de rolagem quando o conteúdo excede as dimensões da div */
+        max-height: 100%;
+        /* Definindo uma altura máxima */
+        box-sizing: border-box;
+        /* Inclua a largura da borda e do preenchimento no cálculo da altura */
+    }
     .sectionWallpaper {
         background: none;
-    }
-    .divBackground {
-        height: auto;
-        /* Altura automática para caber o conteúdo verticalmente */
-        max-height: 100vh;
-        /* Limita a altura máxima para 100% da altura da tela */
+        width: 105%;
     }
     .logoIcon {
         margin-top: 10px;
@@ -235,26 +243,42 @@ p {
     strong {
         font-size: 0px;
     }
+    .containerWrapper {
+        overflow: auto;
+        /* Adiciona barra de rolagem quando necessário */
+        max-height: 300px;
+        /* Define a altura máxima para a barra de rolagem */
+    }
     .containersNews {
+        margin-top: 40px;
         display: flex;
+        overflow: auto;
+        /* Adiciona barra de rolagem quando necessário */
+        max-height: 400px;
         flex-wrap: wrap;
     }
+    .containersNews>* {
+        flex-basis: 50%;
+        /* Define a largura base para 50% */
+    }
     .news {
-        height: 100px;
-        width: 50%;
+        height: 60px;
+        width: 40%;
         border-radius: 50px;
-        border-radius: 0px;
-        margin-bottom: 60px;
+        border-radius: 50px;
+        margin-bottom: 0px;
+        text-align: center;
     }
     .news:hover {
-        height: 100px;
+        height: 90px;
         width: 50px;
     }
     .imgNews {
-        width: 80px;
+        width: 0px;
+        margin-top: 10px;
     }
     h1 {
-        font-size: 10px;
+        font-size: 12px;
         font-family: 'Lora', serif;
     }
     .news:hover p {
@@ -265,10 +289,10 @@ p {
         animation: none;
     }
     p {
-        margin-top: 5px;
+        margin-top: 2px;
         color: aliceblue;
         font-family: 'Lora', serif;
-        font-size: 9px;
+        font-size: 7px;
         padding: 3px;
         transition: width 0.5s ease, height 0.3s ease, border-radius 0.5s ease, background-size 0.5s ease;
     }

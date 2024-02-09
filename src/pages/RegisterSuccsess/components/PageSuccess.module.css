@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Meedori Sans";
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot");
+    src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot?#iefix")format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff2")format("woff2"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff")format("woff"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.svg#Meedori Sans")format("svg");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+/*font-family: 'Lora', serif;*/
+
+
+/*
+    font-family: "Meedori Sans";
+*/
+
+.backgroundSection {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background-image: url('../../../assets/img/pico-de-montanha-majestoso-em-paisagem-tranquila-de-inverno-gerada-por-ia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px);
+}
+
+.mainContent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.sectionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 22vh;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    /* duração da animação */
+    animation-timing-function: ease;
+    /* função de temporização (opcional) */
+    animation-delay: 0s;
+    /* atraso antes da animação começar (opcional) */
+    animation-iteration-count: 1;
+    /* número de vezes que a animação deve ser repetida (opcional) */
+    animation-direction: initial;
+    /* direção da animação (opcional) */
+    animation-fill-mode: forwards;
+    /* comportamento do elemento após a animação (opcional) */
+    animation-play-state: running;
+    /* estado de reprodução da animação (opcional) */
+}
+
+.sectionTitle h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-family: "Meedori Sans";
+}
+
+.sectionTitle strong {
+    padding: 2px;
+    word-wrap: break-word;
+    /* Para navegadores mais antigos */
+    overflow-wrap: break-word;
+    /* Para navegadores mais recentes */
+}
+
+.divButton button {
+    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    color: aliceblue;
+    font-family: "Meedori Sans";
+    border: solid 2px rgb(80, 77, 32);
+    background-color: rgb(146, 140, 52);
+    cursor: url('../../../assets/CursorPointer.png'), auto !important;
+    transition: width 0.5s ease, height 0.5s ease, border-radius 0.5s ease, background-size 0.5s ease;
+}
+
+.divButton button:hover {
+    background-image: url('../../../assets/img/iconWallpaperGif.gif');
+}
+
+.loadingMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+}
+
+.loadGif {
+    filter: blur(2px);
+    width: 30px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .backgroundSection {
+        width: 105%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        background-image: url('../../../assets/img/pico-de-montanha-majestoso-em-paisagem-tranquila-de-inverno-gerada-por-ia.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: blur(5px);
+    }
+    .sectionTitle {
+        margin-top: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .sectionLogin {
+        margin-top: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .sectionTitle {
+        margin-top: 10vh;
+    }
+    .sectionTitle h1 {
+        font-size: 15px;
+    }
+    .sectionTitle strong {
+        font-size: 12px;
+        text-align: center;
+    }
+    .lineGolden {
+        width: 300px;
+    }
+}

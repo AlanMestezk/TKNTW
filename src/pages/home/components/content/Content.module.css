@@ -83,11 +83,12 @@
 }
 
 .divButton .button {
-    width: 300px;
+    width: 320px;
     height: 60px;
-    background-image: linear-gradient( 110.2deg, rgba(99, 192, 227, 1) 5.3%, rgba(98, 72, 194, 1) 100.2%);
-    border: 3px solid #DAA520;
-    border-radius: 40px;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    border: solid 2px rgb(80, 77, 32);
+    background-color: rgb(146, 140, 52);
     font-family: 'ROBOTECH GP', sans-serif;
     font-size: 30PX;
     color: #DAA520;
@@ -97,7 +98,7 @@
 
 .divButton .button:hover {
     transition: 0.6s;
-    background-image: linear-gradient( 109.6deg, rgba(225, 103, 211, 1) 11.2%, rgba(207, 91, 91, 1) 91.1%);
+    background-image: url('../../../../assets/img/iconWallpaperGif.gif');
 }
 
 @keyframes fadeInOut {
@@ -115,14 +116,35 @@
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .backgroundSection {
+        width: 104.8%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.7;
+    }
+    .divTitle {
+        margin-left: 18px;
+    }
+    .divButton .button {
+        width: 300px;
+        height: 60px;
+        margin-left: 20px;
+    }
+}
+
 @media only screen and (max-width: 1366px) {
     .titleLogo {
-        width: 360px;
+        width: 300px;
+    }
+    .subtitle {
+        width: 200px;
     }
     .divTitleLogo {
         margin-top: 20px;
     }
     .logo {
-        width: 150px;
+        width: 90px;
     }
 }

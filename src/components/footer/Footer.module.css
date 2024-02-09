@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+.container {
+    background-color: rgba(5, 5, 5, 0.966);
+    margin-top: 20px;
+}
+
+.sectionTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+
+.divTitleCreatorDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #929191, #c5c0c0);
+    /* Aplica o efeito de clip no texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Define a cor de fundo */
+    color: transparent;
+    font-family: 'ROBOTECH GP', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
+}
+
+.divDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #929191, #c5c0c0);
+    /* Aplica o efeito de clip no texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Define a cor de fundo */
+    color: transparent;
+    font-family: 'ROBOTECH GP', sans-serif;
+    font-size: 22px;
+    padding: 10px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
+}
+
+.sectionRedes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divTitleIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.divTitleIcon h3 {
+    color: rgb(104, 104, 104);
+    font-family: 'Lora', serif;
+    font-weight: bolder;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 10px 10px 12px rgba(0, 0, 0, 0.726);
+    font-size: 18px;
+}
+
+.divSocialMidia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -10px;
+}
+
+.divSocialMidia h3 {
+    font-family: sans-serif;
+    color: rgb(104, 104, 104);
+    font-size: 18px;
+}
+
+.divIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    padding: 7px;
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+}
+
+.icons:hover {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 105%;
+    }
+    .divDescription {
+        font-size: 15px;
+        font-family: 'Lora', serif;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    .divTitleIcon h3 {
+        font-size: 10px;
+    }
+    .divSocialMidia h3 {
+        font-size: 12px;
+        padding: 12px;
+    }
+    .icons {
+        padding: 10px;
+        font-size: 15px;
+        color: rgb(104, 104, 104);
+    }
+    .icons:hover {
+        font-size: 20px;
+    }
+}

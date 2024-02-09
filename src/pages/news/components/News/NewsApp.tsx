@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import style from './News.module.css';
-import logo from '../../../../assets/img/TKNTW!.png';
+import { useState }    from 'react';
+import style           from './News.module.css';
+import logo            from '../../../../assets/img/TKNTW!.png';
 import videoBackGround from '../../../../assets/videoplayback.webm';
-import SorAric from '../../../../assets/img/Sor Aric.jpg';
-import SombraMorte from '../../../../assets/img/Sombra-Morte.jpg';
-import Lyra from '../../../../assets/img/Lyra.jpg';
-import Duelo from '../../../../assets/img/Batalha.jpg';
+import SorAric         from '../../../../assets/img/Sor Aric.jpg';
+import SombraMorte     from '../../../../assets/img/Sombra-Morte.jpg';
+import Lyra            from '../../../../assets/img/Lyra.jpg';
+import Duelo           from '../../../../assets/img/Batalha.jpg';
+import posterImage     from '../../../../assets/img/pico-de-montanha-majestoso-em-paisagem-tranquila-de-inverno-gerada-por-ia.jpg'
 
 type NewsKey = 'montarias' | 'skins' | 'sombraMorte' | 'duelos';
 
@@ -14,6 +15,7 @@ type NewsVisibilityState = {
 };
 
 export const NewsApp = () => {
+
     const [isParagraphVisible, setIsParagraphVisible] = useState<NewsVisibilityState>({
         montarias: false,
         skins: false,
@@ -32,7 +34,7 @@ export const NewsApp = () => {
     return (
         <main className={style.container}>
             <section className={style.divBackground}>
-                <video src={videoBackGround} autoPlay loop muted />
+                <video src={videoBackGround} autoPlay loop muted poster={posterImage} />
             </section>
             <section className={style.sectionWallpaper}>
                 <div className={style.divIconTitle}>

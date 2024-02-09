@@ -9,15 +9,6 @@
     src: url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.eot?#iefix")format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff2")format("woff2"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.woff")format("woff"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/3bc3edde69903e0e83444ecc60cc8913.svg#Meedori Sans")format("svg");
 }
 
-
-/*
-    font-family: 'ROBOTECH GP', sans-serif;
-    font-family: 'Gotham Knights Expand Italic', sans-serif;
-    font-family: 'Gotham Knights Italic', sans-serif;
-    font-family: 'robotech', sans-serif;
-    font-family: 'Robotech Complete', sans-serif;
-*/
-
 .container {
     display: flex;
     justify-content: space-between;
@@ -59,6 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: url('../src/assets/CursorPointer.png'), auto;
 }
 
 .divButtons .buttonsLink {
@@ -67,6 +59,7 @@
     font-size: 20px;
     margin-right: 20px;
     text-decoration: none;
+    cursor: url('../src/assets/CursorPointer.png'), auto;
     transition: width 0.5s ease, height 0.5s ease, border-radius 0.5s ease, background-size 0.5s ease;
 }
 
@@ -82,6 +75,7 @@
     padding: 10px;
     background-clip: text;
     -webkit-background-clip: text;
+    cursor: url('../src/assets/CursorPointer.png'), auto;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.863);
 }
 
@@ -90,39 +84,10 @@
     border-radius: 50px;
 }
 
-@media(max-width: 630px) {
-    .divButtons .buttons button {
-        background-color: rgba(0, 0, 0, 0);
-        border: none;
-        color: aliceblue;
-        cursor: pointer;
-        font-family: 'Gotham Knights Expand Italic', sans-serif;
-        font-size: 20px;
-    }
-    .divButtons .buttons button:hover {
-        font-size: 15px;
-        color: #DAA520;
-    }
-}
-
-@media(max-width: 500px) {
-    .divButtons .buttons button {
-        background-color: rgba(0, 0, 0, 0);
-        border: none;
-        color: aliceblue;
-        cursor: pointer;
-        font-family: 'Gotham Knights Expand Italic', sans-serif;
-        font-size: 18px;
-    }
-    .divButtons .buttons button:hover {
-        font-size: 21px;
-        color: #DAA520;
-    }
-}
-
 @media only screen and (max-width: 800px) {
     .container {
         height: 80px;
+        width: 104.8%;
     }
     .container .divTitle .logo {
         width: 92px;
@@ -137,11 +102,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 30px;
     }
     .divButtons .buttonsLink {
         border: none;
         color: aliceblue;
-        margin-right: 20px;
+        margin-right: 10px;
         text-decoration: none;
         transition: width 0.5s ease, height 0.5s ease, border-radius 0.5s ease, background-size 0.5s ease;
     }
