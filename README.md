@@ -1,6 +1,6 @@
-O site conduz você diretamente ao jogo "THE KING THAT NEVER WAS", uma experiência de RPG envolvente. Ele proporciona toda a imersão necessária para prepará-lo para o jogo no futuro.
+The website takes you directly to the game "THE KING THAT NEVER WAS," an engaging RPG experience. It provides all the immersion necessary to prepare you for the game in the future.
 
-Este projeto foi concebido para colocar em prática tudo o que venho aprendendo no desenvolvimento front-end. Utilizamos React com TypeScript, e a biblioteca Vite para extrair o máximo possível do React. Para a estilização, optamos pelo uso de CSS Modules. O projeto está em constante evolução, com mais atualizações em breve.
+This project was designed to put into practice everything I've been learning in front-end development. We used React with TypeScript, and the Vite library to extract as much as possible from React. For styling, we opted for the use of CSS Modules. The project is constantly evolving, with more updates coming soon.
 
-Link para acessar o projeto: https://tkntw-vercel.vercel.app
+Link to access the project: https://tkntw-vercel.vercel.app
 
