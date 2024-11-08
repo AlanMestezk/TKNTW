@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/52c11999-5b6d-4ddb-933e-d2d65136176e" alt="TKNTW!" width="200"/>
-  <p><em>Uma lenda de traição, magia e redenção que moldará o destino de Eldoria.</em></p>
+  <p><em>A legend of betrayal, magic, and redemption that will shape the fate of Eldoria</em></p>
 </div>
 
 ---
@@ -9,32 +9,33 @@
   <img src="https://github.com/user-attachments/assets/565531bd-8636-46fd-8c8c-fb5ac1628294" alt="iconText!" width="350"/>
 </div>
 
-**"The King That Never Was"** conta a história trágica do Rei Eldrian, traído por seu irmão Malgrim no dia de sua coroação. Para salvar Eldoria, Eldrian lançou um feitiço proibido que matou todos ao seu redor, deixando-o imortalmente preso em seu trono como punição dos deuses. Enquanto Malgrim governa com tirania, uma profecia fala do herói prometido que empunhará a Espada Sombra-Morte, desafiará o tirano e libertará Eldoria.
+"The King That Never Was" tells the tragic tale of King Eldrian, betrayed by his brother Malgrim on the day of his coronation. To save Eldoria, Eldrian cast a forbidden spell that killed everyone around him, leaving him immortally bound to his throne as punishment from the gods. While Malgrim rules with tyranny, a prophecy speaks of the promised hero who will wield the Shadow-Death Sword, challenge the tyrant, and liberate Eldoria.
 
 ---
 
 <div align="center">
-  <h2>🌟 **Sobre o Site** 🌟</h2>
-  <p>Um portal para explorar o mundo de Eldoria e a jornada do herói prometido.</p>
+  <h2>🌟 **About the Website** 🌟</h2>
+  <p>A portal to explore the world of Eldoria and the journey of the promised hero</p>
 </div>
 
-### No site, você encontrará:
+### On the website, you will find:
 
-- **📜 Histórias e Contos**: Expanda o universo de Eldoria com narrativas ricas.
-- **🗺️ Mapas e Locais**: Descubra regiões dominadas por Malgrim e mistérios antigos.
-- **🎨 Arte e Multimídia**: Ilustrações, vídeos e conteúdos que dão vida à lenda.
-- **⚔️ Desafios do Herói**: Experiências interativas que colocam você na jornada.
+- **📜 Stories and Tales: Expand the universe of Eldoria with rich narratives.
+- **🗺️ Maps and Locations: Discover regions ruled by Malgrim and ancient mysteries.
+- **🎨 🎨 Art and Multimedia: Illustrations, videos, and content that bring the legend to life.
+- **⚔️ Hero's Challenges: Interactive experiences that put you on the journey.
 
-Nosso objetivo é oferecer uma experiência imersiva que transportará você para Eldoria, onde a lenda do Rei que nunca foi permanece viva e o destino aguarda o prometido.
-
----
-
-### Status do Projeto
-Este site ainda está em desenvolvimento e novas funcionalidades e conteúdos estão em constante evolução. Acompanhe o progresso e explore o mundo de Eldoria clicando [aqui](https://tkntw-vercel.vercel.app).
+Our goal is to offer an immersive experience that will transport you to Eldoria, where the legend of the King That Never Was remains alive and the promised hero's destiny awaits.
 
 ---
 
-#### Desenvolvido por [Alan Mestezk](https://github.com/AlanMestezk) 🚀
+### Project Status
+This website is still under development, with new features and content constantly evolving. Keep track of our progress and explore the world of Eldoria as it grows
+clicking [here](https://tkntw-vercel.vercel.app).
+
+---
+
+#### Developed by [Alan Mestezk](https://github.com/AlanMestezk) 🚀
 
 
 
