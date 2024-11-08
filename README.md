@@ -34,7 +34,7 @@ Este site ainda está em desenvolvimento e novas funcionalidades e conteúdos es
 
 ---
 
-#### Desenvolvido por [Seu Nome](https://www.seuperfil.com) 🚀
+#### Desenvolvido por [Alan Mestezk](https://github.com/AlanMestezk) 🚀
 
 
 
