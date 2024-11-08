@@ -1,13 +1,12 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/52c11999-5b6d-4ddb-933e-d2d65136176e" alt="TKNTW!" width="200"/>
-  <h1>**The King That Never Was**</h1>
   <p><em>Uma lenda de traição, magia e redenção que moldará o destino de Eldoria.</em></p>
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/565531bd-8636-46fd-8c8c-fb5ac1628294" alt="iconText!" width="200"/>
+  <img src="https://github.com/user-attachments/assets/565531bd-8636-46fd-8c8c-fb5ac1628294" alt="iconText!" width="350"/>
 </div>
 
 **"The King That Never Was"** conta a história trágica do Rei Eldrian, traído por seu irmão Malgrim no dia de sua coroação. Para salvar Eldoria, Eldrian lançou um feitiço proibido que matou todos ao seu redor, deixando-o imortalmente preso em seu trono como punição dos deuses. Enquanto Malgrim governa com tirania, uma profecia fala do herói prometido que empunhará a Espada Sombra-Morte, desafiará o tirano e libertará Eldoria.
